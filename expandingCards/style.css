@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards-wrapper{
+    width:900px;
+    height:400px;
+    display: flex;
+    gap:15px;
+}
+.card{
+    width: 15%;
+    height: 100%;
+    border-radius: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: end;
+    padding: 25px 18px;
+    transition: width 1s;
+}
+.expand{
+    width: 100%;
+    border:5px solid white;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+.content{
+    z-index: 1;
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.icon{
+    font-size: 25px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+.product-text{
+    display: flex;
+    flex-direction: column;
+}
+span{
+    font-weight: 600;
+    color:white;
+    font-size: 18px;
+}
+h1{
+    color:white
+}
+
+ .fade-in {
+    animation: fadeIn 1s forwards;
+  }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
