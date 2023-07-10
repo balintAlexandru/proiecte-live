@@ -9,3 +9,6 @@ bookButton.addEventListener("click", () => {
 orderButton.addEventListener("click", () => {
   card.classList.remove("is-flip");
 });
+
+const circleType = new CircleType(document.querySelector("h3"));
+circleType.radius(200);
