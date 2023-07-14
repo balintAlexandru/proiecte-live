@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #26292b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  height: 550px;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: -7px 10px 111px -33px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -7px 10px 111px -33px rgba(0, 0, 0, 0.75);
+  box-shadow: -7px 10px 111px -33px rgba(0, 0, 0, 0.75);
+  background: rgb(228, 218, 218);
+}
+.wallpaper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.login {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  transition: width 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.login-hide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.register-hide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 60px;
+  visibility: hidden;
+}
+.register-hide h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.login h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.reminder {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.reminder span {
+  white-space: nowrap;
+  font-size: 14px;
+}
+.reminder p {
+  white-space: nowrap;
+  margin-left: 40px;
+  font-size: 14px;
+}
+
+input {
+  width: 60%;
+  background: rgb(199, 199, 199);
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  color: gray;
+  font-weight: 600;
+  outline: none;
+}
+.radio {
+  width: 10%;
+}
+.register {
+  width: 0%;
+  height: 100%;
+  transition: width 1s;
+  background-color: white;
+  z-index: 5;
+}
+.register-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 3;
+  gap: 80px;
+  padding: 60px;
+}
+.register-info h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+}
+.register-info p {
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-align: center;
+}
+.login-info {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 0;
+  gap: 80px;
+  padding: 60px;
+}
+
+.login-info h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.login-info p {
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.btn {
+  font-size: 18px;
+  padding: 10px 50px;
+  border-radius: 50px;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.219);
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.model {
+  padding: 10px 40px;
+  border-radius: 50px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #ed6b68;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+.social {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.social img {
+  width: 20px;
+  height: 20px;
+}
