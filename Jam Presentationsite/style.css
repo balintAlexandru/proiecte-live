@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #26292b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 900px;
+  height: 550px;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: -7px 10px 111px -33px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -7px 10px 111px -33px rgba(0, 0, 0, 0.75);
+  box-shadow: -7px 10px 111px -33px rgba(0, 0, 0, 0.75);
+  background: rgb(216, 221, 220);
+}
+.col-1 {
+  width: 50%;
+  height: 100%;
+  background: rgb(172, 175, 175);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  padding: 0px 40px;
+}
+.col-2 {
+  width: 50%;
+  height: 100%;
+  background: white;
+}
+.jar {
+  width: 100%;
+  height: 90%;
+  transition: all 1s;
+}
+.jar:hover {
+  transform: rotate(15deg);
+}
+.category {
+  display: flex;
+  gap: 10px;
+}
+
+.category-image {
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+  padding: 2px;
+}
+p {
+  line-height: 22px;
+}
+.str {
+  background-color: rgb(241, 79, 79);
+}
+.lem {
+  background-color: rgb(67, 219, 36);
+}
+.che {
+  background-color: rgb(150, 44, 30);
+}
+.or {
+  background-color: rgb(194, 148, 22);
+}
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+button {
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(241, 79, 79);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+.fruit {
+  position: absolute;
+  width: 200px;
+  height: 180px;
+  transition: all 1s;
+}
+
+.img1 {
+  top: -180px;
+  left: 320px;
+}
+.img2 {
+  transform: rotate(-20deg);
+  left: -180px;
+  top: 30px;
+}
+.img3 {
+  left: -180px;
+  transform: rotate(44deg);
+  bottom: 10px;
+}
